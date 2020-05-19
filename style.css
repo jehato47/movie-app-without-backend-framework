@@ -6,6 +6,8 @@
 }
 
 html, body {
+  width: auto!important;
+  overflow-x: hidden!important;
   margin: 0;
   background: black;
   font-family: 'Montserrat', helvetica, arial, sans-serif;
