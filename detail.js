@@ -21,7 +21,6 @@ let len;
 
 let details = {};
 async function getCastAndDetails(idd) {
-
     // This is the main function of the details page
     // We do three basic things here
     // Take data and let it to an object 
@@ -52,11 +51,11 @@ async function getCastAndDetails(idd) {
         len1 = details.recommendations.length
         len = details.casts.length
 
-    console.log()
-
+    
     createDetailPage()
     createCasts()
     createRecoms()
+
 }
 
 
@@ -69,7 +68,7 @@ function createRecoms(){
     
         while(len1 > 0){
             
-            console.log(details.recommendations[r])
+
             let card = `<div onclick="getCastAndDetails(${details.recommendations[r].id})" class="movie_card" id="bright">
                     <div class="info_section">
                         <div class="movie_header">
@@ -121,16 +120,12 @@ function createCasts() {
         document.getElementById("castcrew").innerHTML += cast;
         len -= 1;
         x += 1;
-        console.log(len, x)
+
         if (x % 6 === 0) {
             break;
         }
     }
 }
-
-
-
-
 
 
 function createDetailPage() {
