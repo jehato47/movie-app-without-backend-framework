@@ -23,14 +23,9 @@ document.getElementById("search_form").addEventListener("submit", (e) => {
         </div>
     </div>`
         fulfill_cards(search + target + search2, "secondary-div")
-
+    
+    
     e.preventDefault()
 })
-
-
-
-
-
-
 
 
